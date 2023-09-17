@@ -1,5 +1,5 @@
 <template>
-  <section class="relative h-screen px-[150px] w-full overflow-hidden">
+  <section class="relative h-screen w-full overflow-hidden">
     <div class="w-full h-full flex">
       <div
         class="h-full w-[55%] flex items-start justify-center flex-col rotate-[-1deg]"
@@ -8,25 +8,29 @@
           <p class="tracking-widest">HELLO I'M</p>
           <span class="w-[525px] h-[1.6px] bg-secondary ml-3"></span>
         </div>
-        <h1 class="font-PS2P font-bold text-[40px] mt-2">Johnny A Asumbra</h1>
-        <div class="rotate-1">
-          <p class="mt-5 text-justify pr-[40px]">
+        <h1 class="font-PS2P font-bold text-[20px] mt-2">Johnny A. Asumbra</h1>
+        <div class="rotate-1 mt-9 text-4xl">
+          <h1 class="font-kanit text-6xl font-extrabold">
+            I <span class="text-secondary">create</span> and
+            <span class="text-secondary">build</span> web-based.
+          </h1>
+          <!-- <p class="mt-5 text-justify pr-[40px]">
             Welcome to my portfolio! I'm a web developer passionate about
             developing websites. Explore my work, testimonials, and professional
             background. Let's connect and collaborate on exciting projects.
             Thank you for visiting!
-          </p>
+          </p> -->
         </div>
         <div class="flex gap-5 mt-10">
           <button
-            class="flex items-center px-5 py-2 text-lg rounded bg-secondary text-white shadow-sm shadow-primary hover:shadow-none hover:bg-transparent border border-transparent hover:border-secondary transition-all ease-linear duration-200 group"
+            class="flex items-center px-4 py-2 text-md rounded bg-secondary text-white shadow-sm shadow-primary hover:shadow-none hover:bg-transparent border border-transparent hover:border-secondary transition-all ease-linear duration-200 group"
           >
             <span class="group-hover:text-primary transition-all"
               >Download CV</span
             >
           </button>
           <button
-            class="flex items-center px-5 py-2 text-lg rounded text-white hover:shadow-sm shadow-primary hover:shadow-none hover:bg-transparent border border-secondary hover:bg-secondary transition-all ease-linear duration-200 group"
+            class="flex items-center px-4 py-2 text-md rounded shadow-primary border border-secondary text-white hover:shadow-sm hover:bg-secondary transition-all ease-linear duration-200 group"
           >
             <span class="group-hover:text-white text-primary transition-all"
               >Contact Me</span
@@ -49,16 +53,18 @@
       </div>
       <div class="h-full w-[45%] flex items-center justify-center">
         <div
-          class="h-[300px] w-[300px] md:h-[400px] md:w-[400px] profile-wrapper z-20"
+          class="h-[300px] w-[300px] md:h-[400px] md:w-[400px] profile-wrapper z-20 group"
         >
-          <img src="/public/images/profile.jpg" alt="" class="h-full w-full" />
+          <img
+            src="/public/images/profile.jpg"
+            alt=""
+            class="relative h-full w-full transition-all ease-linear duration-300 cursor-pointer overflow-hidden"
+          />
         </div>
       </div>
     </div>
-    <div
-      class="absolute bottom-12 left-[150px] flex items-center justify-center"
-    >
-      <p class="text-[11px] font-PS2P">Check Out My</p>
+    <div class="absolute bottom-12 left-0 flex items-center justify-center">
+      <p class="text-[11px] font-PS2P animate-pulse">Check Out My</p>
       <span class="w-[100px] h-[1px] bg-secondary ml-3"></span>
       <div class="flex gap-4 ml-3">
         <div
@@ -156,9 +162,9 @@
       </div>
     </div>
     <div
-      class="absolute bottom-[200px] right-0 flex items-center justify-center rotate-[-90deg] animate-pulse"
+      class="absolute bottom-[200px] right-[-150px] flex items-center justify-center rotate-[-90deg]"
     >
-      <p class="text-[11px] font-PS2P">Scroll down</p>
+      <p class="text-[11px] font-PS2P animate-pulse">Scroll down</p>
       <span class="w-[200px] h-[1px] bg-secondary ml-3"></span>
       <div class="flex gap-5"></div>
     </div>
@@ -189,6 +195,32 @@ export default {
   transform: rotate3d(0, 1, 0, -30deg);
   z-index: -1;
   animation: animate-profile1 0.6s linear;
+}
+.profile-wrapper::before {
+  font-family: "Press Start 2P", sans-serif;
+  content: "BS Information Technology";
+  font-weight: 700;
+  font-size: 13px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  color: #00494d;
+  padding-bottom: 20px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  background: rgb(0, 170, 179);
+  background: linear-gradient(
+    365deg,
+    rgba(0, 170, 179, 1) 0%,
+    rgba(0, 170, 179, 0) 40%
+  );
+  inset: 0;
+  transform: translateY(0);
+  transform: rotate3d(0, 1, 0, -25deg);
+  z-index: 1;
+  animation: animate-profile2 0.7s linear;
 }
 .profile-wrapper img {
   border-radius: 15px;

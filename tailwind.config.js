@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         PS2P: ["Press Start 2P", "sans-serif"],
-        montserrat: ["Montserrat", "san-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+        kanit: ["Kanit", "sans-serif"],
       },
       colors: {
         primary: "hsl(var(--color-primary) / <alpha-value>)",
