@@ -30,7 +30,7 @@
             >
           </button>
           <button
-            class="flex items-center px-4 py-2 text-md rounded shadow-primary border border-secondary text-white hover:shadow-sm hover:bg-secondary transition-all ease-linear duration-200 group"
+            class="flex items-center px-4 py-2 text-md rounded shadow-primary border border-secondary text-white hover:shadow-sm hover:shadow-primary hover:bg-secondary transition-all ease-linear duration-200 group"
           >
             <span class="group-hover:text-white text-primary transition-all"
               >Contact Me</span
