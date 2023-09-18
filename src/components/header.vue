@@ -1,6 +1,13 @@
 <template>
   <div
-    class="fixed top-0 w-full h-[90px] bg-secondary/50 flex items-center justify-between px-[150px] shadow-sm shadow-secondary z-50"
+    class="fixed top-0 w-full h-[90px] flex items-center justify-between px-[150px] shadow-sm shadow-secondary z-50 transition-all ease-linear duration-200"
+    :class="
+      headerStatus == false && scrollPosition != 0
+        ? 'translate-y-0 opacity-100 bg-secondary'
+        : scrollPosition == 0
+        ? 'bg-secondary/50 translate-y-0 opacity-100 '
+        : 'translate-y-[-100%] opacity-0'
+    "
   >
     <div
       class="rotate-[-2deg] hover:animate-pulse hover:rotate-2 cursor-pointer transition-all ease-linear duration-300"
@@ -12,35 +19,60 @@
     </div>
     <nav class="flex gap-1 list-none text-primary">
       <li class="relative font-bold text-[16px] cursor-pointer px-4 py-2 group">
-        <span class="text-white transition-all ease-linear duration-300"
+        <span
+          class="transition-all ease-linear duration-300"
+          :class="
+            activeSection == 'introduction' ? 'text-white' : 'text-primary'
+          "
           >Home</span
         >
         <div
           class="absolute w-full h-full bg-secondary opacity-1000 group-hover:opacity-100 inset-0 rounded skew-x-[-15deg] z-[-1] transition-all ease-linear duration-300 shadow-sm shadow-primary"
+          :class="activeSection == 'introduction' ? 'block' : 'hidden'"
         ></div>
       </li>
       <li class="relative font-bold text-[16px] cursor-pointer px-4 py-2 group">
-        <span class="transition-all ease-linear duration-300">About</span>
+        <span
+          class="transition-all ease-linear duration-300"
+          :class="activeSection == 'about' ? 'text-white' : 'text-primary'"
+          >About</span
+        >
         <div
-          class="absolute w-full h-full bg-secondary opacity-0 group-hover:opacity-100 inset-0 rounded skew-x-[-15deg] z-[-1] transition-all ease-linear duration-300 shadow-sm shadow-primary"
+          class="absolute w-full h-full bg-secondary opacity-1000 group-hover:opacity-100 inset-0 rounded skew-x-[-15deg] z-[-1] transition-all ease-linear duration-300 shadow-sm shadow-primary"
+          :class="activeSection == 'about' ? 'block' : 'hidden'"
         ></div>
       </li>
       <li class="relative font-bold text-[16px] cursor-pointer px-4 py-2 group">
-        <span class="transition-all ease-linear duration-300">Projects</span>
+        <span
+          class="transition-all ease-linear duration-300"
+          :class="activeSection == 'projects' ? 'text-white' : 'text-primary'"
+          >Projects</span
+        >
         <div
-          class="absolute w-full h-full bg-secondary opacity-0 group-hover:opacity-100 inset-0 rounded skew-x-[-15deg] z-[-1] transition-all ease-linear duration-300 shadow-sm shadow-primary"
+          class="absolute w-full h-full bg-secondary opacity-1000 group-hover:opacity-100 inset-0 rounded skew-x-[-15deg] z-[-1] transition-all ease-linear duration-300 shadow-sm shadow-primary"
+          :class="activeSection == 'projects' ? 'block' : 'hidden'"
         ></div>
       </li>
       <li class="relative font-bold text-[16px] cursor-pointer px-4 py-2 group">
-        <span class="transition-all ease-linear duration-300">Experience</span>
+        <span
+          class="transition-all ease-linear duration-300"
+          :class="activeSection == 'experience' ? 'text-white' : 'text-primary'"
+          >Experience</span
+        >
         <div
-          class="absolute w-full h-full bg-secondary opacity-0 group-hover:opacity-100 inset-0 rounded skew-x-[-15deg] z-[-1] transition-all ease-linear duration-300 shadow-sm shadow-primary"
+          class="absolute w-full h-full bg-secondary opacity-1000 group-hover:opacity-100 inset-0 rounded skew-x-[-15deg] z-[-1] transition-all ease-linear duration-300 shadow-sm shadow-primary"
+          :class="activeSection == 'experience' ? 'block' : 'hidden'"
         ></div>
       </li>
       <li class="relative font-bold text-[16px] cursor-pointer px-4 py-2 group">
-        <span class="transition-all ease-linear duration-300">Contact</span>
+        <span
+          class="transition-all ease-linear duration-300"
+          :class="activeSection == 'contact' ? 'text-white' : 'text-primary'"
+          >Contact</span
+        >
         <div
-          class="absolute w-full h-full bg-secondary opacity-0 group-hover:opacity-100 inset-0 rounded skew-x-[-15deg] z-[-1] transition-all ease-linear duration-300 shadow-sm shadow-primary"
+          class="absolute w-full h-full bg-secondary opacity-1000 group-hover:opacity-100 inset-0 rounded skew-x-[-15deg] z-[-1] transition-all ease-linear duration-300 shadow-sm shadow-primary"
+          :class="activeSection == 'contact' ? 'block' : 'hidden'"
         ></div>
       </li>
       <li class="flex items-center justify-center ml-5">
@@ -90,6 +122,12 @@
 import { ref } from "vue";
 
 export default {
+  props: {
+    scrollPosition: Number,
+    prevScrollPosition: Number,
+    headerStatus: Boolean,
+    activeSection: String,
+  },
   setup() {
     const darkMode = ref(false);
 

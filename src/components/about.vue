@@ -75,22 +75,22 @@
           <div
             class="relative w-[1.5px] h-full flex items-center justify-center bg-white rounded-full stick"
           ></div>
-          <div class="flex flex-col ml-5">
+          <div class="relative flex flex-col ml-5">
             <h5 class="font-kanit font-extrabold text-sm">
               Notre Dame of Marbel University
             </h5>
-            <span class="text-[.55em] text-white leading-tight">
-              (NDMU Complex, NDMU Basketball Court (outdoor), Rafael Alunan Ave,
-              Poblacion, Koronadal City, 9506 South Cotabato)
+            <span class="mt-3 h-[50px] text-[.65em] text-white leading-tight">
+              ( NDMU Complex, NDMU Basketball Court (outdoor), Rafael Alunan
+              Ave, Poblacion, Koronadal City, 9506 South Cotabato )
             </span>
             <span
-              class="bg-primary text-white w-fit px-2 mt-2 rounded skew-y-[-2deg]"
+              class="bg-primary text-white w-fit px-2 rounded skew-y-[-2deg]"
               >2019 - 2023</span
             >
             <img
               src="/images/shs.jpg"
               alt=""
-              class="mt-5 rounded object-cover skew-x-[-4deg] grayscale hover:grayscale-0 hover:skew-x-0 transition-all ease-linear duration-200"
+              class="absolute bottom-[-40%] w-full mt-5 rounded-lg skew-x-[-4deg] rotate-[-3deg] grayscale hover:border-[6px] border-secondary shadow-md shadow-secondary hover:grayscale-0 hover:skew-x-0 transition-all ease-linear duration-200"
             />
           </div>
         </div>
@@ -100,22 +100,22 @@
           <div
             class="relative w-[1.5px] h-full flex items-center justify-center bg-white rounded-full stick"
           ></div>
-          <div class="flex flex-col ml-5">
+          <div class="relative flex flex-col ml-5">
             <h5 class="font-kanit font-extrabold text-sm">
-              Notre Dame of Marbel University
+              STI College Koronadal
             </h5>
-            <span class="text-[.55em] text-white leading-tight">
-              (NDMU Complex, NDMU Basketball Court (outdoor), Rafael Alunan Ave,
-              Poblacion, Koronadal City, 9506 South Cotabato)
+            <span class="mt-3 h-[50px] text-[.65em] text-white leading-tight">
+              ( Brgy Santa Lucia St, Poblacion, Koronadal City, 9506 South
+              Cotabato )
             </span>
             <span
-              class="bg-primary text-white w-fit px-2 mt-2 rounded skew-y-[-2deg]"
-              >2019 - 2023</span
+              class="bg-primary text-white w-fit px-2 rounded skew-y-[-2deg]"
+              >2017 - 2019</span
             >
             <img
               src="/images/shs.jpg"
               alt=""
-              class="w-full mt-5 rounded skew-x-[-4deg] grayscale hover:grayscale-0 hover:skew-x-0 transition-all ease-linear duration-200"
+              class="absolute bottom-[-40%] w-full mt-5 rounded-lg skew-x-[-4deg] rotate-[-3deg] grayscale hover:border-4 border-secondary shadow-md shadow-secondary hover:grayscale-0 hover:skew-x-0 transition-all ease-linear duration-200"
             />
           </div>
         </div>
@@ -125,22 +125,21 @@
           <div
             class="relative w-[1.5px] h-full flex items-center justify-center bg-white rounded-full stick"
           ></div>
-          <div class="flex flex-col ml-5">
+          <div class="relative flex flex-col ml-5">
             <h5 class="font-kanit font-extrabold text-sm">
-              Notre Dame of Marbel University
+              Tampakan National High School
             </h5>
-            <span class="text-[.55em] text-white leading-tight">
-              (NDMU Complex, NDMU Basketball Court (outdoor), Rafael Alunan Ave,
-              Poblacion, Koronadal City, 9506 South Cotabato)
+            <span class="mt-3 h-[50px] text-[.65em] text-white leading-tight">
+              ( CWXG+36R, Poblacion, Tampakan, 9507 South Cotabato )
             </span>
             <span
-              class="bg-primary text-white w-fit px-2 mt-2 rounded skew-y-[-2deg]"
-              >2019 - 2023</span
+              class="bg-primary text-white w-fit px-2 rounded skew-y-[-2deg]"
+              >2013 - 2017</span
             >
             <img
               src="/images/shs.jpg"
               alt=""
-              class="w-full mt-5 rounded skew-x-[-4deg] grayscale hover:grayscale-0 hover:skew-x-0 transition-all ease-linear duration-200"
+              class="absolute bottom-[-40%] w-full mt-5 rounded-lg skew-x-[-4deg] rotate-[-3deg] grayscale hover:border-4 border-secondary shadow-md shadow-secondary hover:grayscale-0 hover:skew-x-0 transition-all ease-linear duration-200"
             />
           </div>
         </div>
@@ -150,22 +149,22 @@
           <div
             class="relative w-[1.5px] h-full flex items-center justify-center bg-white rounded-full stick"
           ></div>
-          <div class="flex flex-col ml-5">
+          <div class="relative flex flex-col ml-5">
             <h5 class="font-kanit font-extrabold text-sm">
-              Notre Dame of Marbel University
+              Lanton Elementary School
             </h5>
-            <span class="text-[.55em] text-white leading-tight">
-              (NDMU Complex, NDMU Basketball Court (outdoor), Rafael Alunan Ave,
-              Poblacion, Koronadal City, 9506 South Cotabato)
+            <span class="mt-3 h-[50px] text-[.65em] text-white leading-tight">
+              ( PUROK-5 LANTON, E Salamanca Ave, General Santos City, 9500 South
+              Cotabato )
             </span>
             <span
-              class="bg-primary text-white w-fit px-2 mt-2 rounded skew-y-[-2deg]"
-              >2019 - 2023</span
+              class="bg-primary text-white w-fit px-2 rounded skew-y-[-2deg]"
+              >2007 - 2013</span
             >
             <img
               src="/images/shs.jpg"
               alt=""
-              class="w-full mt-5 rounded skew-x-[-4deg] grayscale hover:grayscale-0 hover:skew-x-0 transition-all ease-linear duration-200"
+              class="absolute bottom-[-40%] w-full mt-5 rounded-lg skew-x-[-4deg] rotate-[-3deg] grayscale hover:border-4 border-secondary shadow-md shadow-secondary hover:grayscale-0 hover:skew-x-0 transition-all ease-linear duration-200"
             />
           </div>
         </div>

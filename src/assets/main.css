@@ -7,8 +7,13 @@
 @tailwind utilities;
 
 
+/* 
+#00464d
+#00aab3
+*/
+
 :root {
-  --color-primary: 185deg 100% 15%;
+  --color-primary: 185deg 100% 15%; 
   --color-secondary:183deg 100% 35%;
 }
 
